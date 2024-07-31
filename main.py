@@ -3,10 +3,13 @@ def generate_2d_array():
 
 
 # 测试函数
-def test_generate_2d_array():
+def test_generate_2d_array:
     array = generate_2d_array()
+    # 遍历array中的每一行
     for row in array:
-        print(row)
+        # 使用字符串的join()方法和列表推导式，生成格式化的字符串
+        formatted_row = ' '.join(['{:<5}'.format(item) for item in row])
+        print(formatted_row)
 
 
 # 调用测试函数
